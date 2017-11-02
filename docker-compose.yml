@@ -1,0 +1,10 @@
+version: "0.1"
+services:
+    jupyter:
+        build: jupyter-docker
+        volumes:
+            - ./data:/jupyter/data
+            - ./notebooks:/jupyter/notebooks
+        ports:
+            - 8888:8888
+            - 4040:4040
